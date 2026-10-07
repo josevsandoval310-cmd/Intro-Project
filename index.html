@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>IB Recruiting Toolkit</title>
+  <meta name="description" content="Spaced-repetition technicals trainer, superday mock interviews, a three-statement simulator, and DCF / WACC / LBO calculators for investment banking recruiting.">
+  <meta name="theme-color" content="#14284b">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2314284b'/%3E%3Cpath d='M8 22l5-6 4 3 7-9' stroke='%23e9b949' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#/home" aria-label="IB Recruiting Toolkit home">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7"/><path d="M8 22l5-6 4 3 7-9"/></svg>
+        <span>IB Toolkit</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#/home" data-route="home"><span class="ico" aria-hidden="true">⌂</span><span>Home</span></a>
+        <a href="#/study" data-route="study"><span class="ico" aria-hidden="true">◧</span><span>Study</span></a>
+        <a href="#/library" data-route="library"><span class="ico" aria-hidden="true">☰</span><span>Library</span></a>
+        <a href="#/statements" data-route="statements"><span class="ico" aria-hidden="true">⇄</span><span>Statements</span></a>
+        <a href="#/valuation" data-route="valuation"><span class="ico" aria-hidden="true">∑</span><span>Valuation</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="main" tabindex="-1"></main>
+
+  <script src="js/util.js"></script>
+  <script src="data/questions.js"></script>
+  <!-- Optional, gitignored: your own questions (e.g. from the 400 Questions guide). See README. -->
+  <script src="data/private-questions.js" onerror="this.remove()"></script>
+  <script src="js/store.js"></script>
+  <script src="js/srs.js"></script>
+  <script src="js/calc.js"></script>
+  <script src="js/views/home.js"></script>
+  <script src="js/views/study.js"></script>
+  <script src="js/views/library.js"></script>
+  <script src="js/views/statements.js"></script>
+  <script src="js/views/valuation.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
