@@ -23,7 +23,8 @@ All answers are written in our own words.
 
 ## Running it
 
-- **Locally:** open `index.html` in a browser. That's it.
+- **Single file (easiest):** download **`ib-toolkit.html`** and open it in any browser. It has everything built in.
+- **From the repo:** clone or download the whole repo (Code → Download ZIP) and open `index.html`. On its own, `index.html` won't work, because it loads the `css/`, `js/` and `data/` files next to it.
 - **On your phone:** turn on GitHub Pages for this repo (Settings → Pages → deploy from the `main` branch, root folder) and open the URL it gives you.
 
 Progress is saved in your browser's local storage. To move progress between devices, use **Home → Settings & backup → Export / Import**.
@@ -47,7 +48,18 @@ js/srs.js                  Spaced repetition scheduling (SM-2 style)
 js/calc.js                 DCF / WACC / LBO math (pure functions)
 js/views/*.js              One file per screen
 tests/                     Node tests for the math, question bank and scenarios
+tools/build-single.js      Bundles everything into ib-toolkit.html
 ```
+
+## Rebuilding the single file
+
+After changing any code or questions, regenerate `ib-toolkit.html`:
+
+```
+node tools/build-single.js
+```
+
+The private question file is never bundled into it. In the single-file version, add your own questions through the Library instead.
 
 ## Tests
 
